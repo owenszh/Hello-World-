@@ -1,0 +1,18 @@
+import jieba
+
+for w in jieba.cut("我爱Python"):
+    print(w)
+    
+for w in jieba.cut("""
+        工信处女干事
+        每月经过下属科室都要亲口交代
+        24口交换机等技术性器件的安装工作
+"""        
+        ):
+    print(w)
+    
+seg_list = jieba.cut(
+        "真武七截阵和天罡北斗阵哪个更厉害呢？"
+        )
+for w in seg_list:
+    print(w)
